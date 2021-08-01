@@ -12,17 +12,14 @@ class TrackListTableViewController: UITableViewController {
     var trackList = Track.getTrackList()
     
     
-    //цуу
-  //уук
-   // уук
+   
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-    }
+        tableView.rowHeight = 65    }
 
   
     
@@ -37,8 +34,24 @@ class TrackListTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "trackName", for: indexPath)
-
+      let cell = tableView.dequeueReusableCell(withIdentifier: "trackName", for: indexPath)
+        let track = trackList[indexPath.row]
+        
+        var content = cell.defaultContentConfiguration()
+        content.text = track.song
+        content.secondaryText = track.artist
+   //     content.image = UIImage(named: track.title)
+   //     content.imageProperties.cornerRadius = tableView.rowHeight \ 2
+        cell.contentConfiguration = content
+        
+    //   cell.textLabel?.text = track.song
+     //   cell.textLabel?.numberOfLines = 2
+     //   cell.detailTextLabel?.text = track.artist
+        
+        
+    //    cell.imageView?.image = UIImage(named: track.title)
+   //     cell.imageView?.layer.cornerRadius = tableView.rowHeight / 2
+   //     cell.imageView?.clipsToBounds = true
         
 
         return cell
