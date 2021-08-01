@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Track List-->
         <scene sceneID="z0w-Bm-Csu">
             <objects>
                 <tableViewController id="qR5-eL-OhK" customClass="TrackListTableViewController" customModule="TrackListApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="qR5-eL-OhK" id="Vjr-4F-eoP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="TRh-Eq-4WR"/>
+                    <navigationItem key="navigationItem" title="Track List" id="TRh-Eq-4WR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uiR-eI-ohV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,8 +40,8 @@
         <scene sceneID="SDA-p5-ByT">
             <objects>
                 <navigationController id="Pzg-p7-Q2d" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ym3-no-tOE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Ym3-no-tOE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
