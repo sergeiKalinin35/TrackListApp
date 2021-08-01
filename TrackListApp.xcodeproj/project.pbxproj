@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		F44279D626B5B12300D39A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44279D526B5B12300D39A1C /* AppDelegate.swift */; };
 		F44279D826B5B12300D39A1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44279D726B5B12300D39A1C /* SceneDelegate.swift */; };
-		F44279DA26B5B12300D39A1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44279D926B5B12300D39A1C /* ViewController.swift */; };
 		F44279DD26B5B12300D39A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44279DB26B5B12300D39A1C /* Main.storyboard */; };
 		F44279DF26B5B12500D39A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44279DE26B5B12500D39A1C /* Assets.xcassets */; };
 		F44279E226B5B12500D39A1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44279E026B5B12500D39A1C /* LaunchScreen.storyboard */; };
+		F4B5D30A26B7060E00BAB95F /* TrackListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B5D30926B7060E00BAB95F /* TrackListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F44279D226B5B12300D39A1C /* TrackListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44279D526B5B12300D39A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44279D726B5B12300D39A1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F44279D926B5B12300D39A1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F44279DC26B5B12300D39A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F44279DE26B5B12500D39A1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44279E126B5B12500D39A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F44279E326B5B12500D39A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B5D30926B7060E00BAB95F /* TrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +56,12 @@
 		F44279D426B5B12300D39A1C /* TrackListApp */ = {
 			isa = PBXGroup;
 			children = (
-				F44279D526B5B12300D39A1C /* AppDelegate.swift */,
-				F44279D726B5B12300D39A1C /* SceneDelegate.swift */,
-				F44279D926B5B12300D39A1C /* ViewController.swift */,
 				F44279DB26B5B12300D39A1C /* Main.storyboard */,
+				F4B5D30926B7060E00BAB95F /* TrackListTableViewController.swift */,
 				F44279DE26B5B12500D39A1C /* Assets.xcassets */,
 				F44279E026B5B12500D39A1C /* LaunchScreen.storyboard */,
+				F44279D726B5B12300D39A1C /* SceneDelegate.swift */,
+				F44279D526B5B12300D39A1C /* AppDelegate.swift */,
 				F44279E326B5B12500D39A1C /* Info.plist */,
 			);
 			path = TrackListApp;
@@ -137,9 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44279DA26B5B12300D39A1C /* ViewController.swift in Sources */,
 				F44279D626B5B12300D39A1C /* AppDelegate.swift in Sources */,
 				F44279D826B5B12300D39A1C /* SceneDelegate.swift in Sources */,
+				F4B5D30A26B7060E00BAB95F /* TrackListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
