@@ -26,9 +26,7 @@ extension Track {
             Track(artist: "Марвин Гэй", song: "What’s Going On"),
             Track(artist: "Арета Франклин", song: "Respect"),
             Track(artist: "The Beach Boys", song: "Good Vibrations"),
-            Track(artist: "Чак Берри", song: "Johnny B. Goode"),
             Track(artist: "The Beatles", song: "Hey Jude"),
-            Track(artist: "Nirvana", song: "Smells Like Teen Spirit"),
             Track(artist: "Рэй Чарльз", song: "What’d I Say")
         ]
         

@@ -19,7 +19,9 @@ class TrackListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.rowHeight = 65    }
+        tableView.rowHeight = 80
+        
+    }
 
   
     
@@ -40,16 +42,18 @@ class TrackListTableViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         content.text = track.song
         content.secondaryText = track.artist
-   //     content.image = UIImage(named: track.title)
-   //     content.imageProperties.cornerRadius = tableView.rowHeight \ 2
+        content.image = UIImage(named: track.track)
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
+        
+        
+        
+        
         
     //   cell.textLabel?.text = track.song
      //   cell.textLabel?.numberOfLines = 2
      //   cell.detailTextLabel?.text = track.artist
-        
-        
-    //    cell.imageView?.image = UIImage(named: track.title)
+        //    cell.imageView?.image = UIImage(named: track.title)
    //     cell.imageView?.layer.cornerRadius = tableView.rowHeight / 2
    //     cell.imageView?.clipsToBounds = true
         
@@ -57,14 +61,21 @@ class TrackListTableViewController: UITableViewController {
         return cell
     }
     
-
+   
+   //     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+      //      100
+   //     }
+    
   
     
     // MARK: - Navigation
 
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       
+        let trackDetailsVc = segue.destination as! TrackDetailsViewController
+        // индекс выбранной ячейки
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        trackDetailsVc.track = trackList[indexPath.row]
         
     }
     
